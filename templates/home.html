@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{%  load static %}
+{% block metadescription %}
+
+{% endblock %}
+{% block title %}
+{% endblock %}
+{% block content %}
+<div>
+    <div class="container" >
+        <div class="text-center">
+            <a href="{% url 'bankapp:login' %}" class="btn btn-secondary btn-block my_custom_button">Click here to login </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

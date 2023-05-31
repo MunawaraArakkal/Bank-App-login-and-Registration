@@ -1,0 +1,31 @@
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.custom-container {
+  max-width: 1200px; /* Adjust the max-width value as desired */
+  margin: 0 auto; /* Centers the container horizontally */
+}
+
+.custom-container-fluid {
+  padding-left: 15px; /* Adjust the padding value as desired */
+  padding-right: 15px; /* Adjust the padding value as desired */
+}
+
+body{
+color:blue
+}
+.h3{
+
+ color:black;
+}
+
+.my_text{
+color:black;
+}

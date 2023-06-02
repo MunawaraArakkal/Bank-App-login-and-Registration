@@ -92,7 +92,7 @@
     </div>
   </div>
   <div class="col-6">
-      <a href="{% url 'bankapp:home' %}" class="btn btn-secondary btn-block my_button">Submit</a>
+      <a href="" class="btn btn-secondary btn-block my_button">Submit</a>
   </div>
     <div class="col-2">
           <a href="{% url 'bankapp:home' %}" class="btn btn-secondary btn-block my_button">Logout</a>
@@ -140,6 +140,31 @@
       } else if (district === 'Alappuzha') {
         branchSelect.append($('<option>', { value: 'Cherthala', text: 'Cherthala' }));
         branchSelect.append($('<option>', { value: 'Haripad', text: ' Haripad' }));
+      }
+    });
+  });
+   $('#myForm').on('submit', function (e) {
+      e.preventDefault(); // Prevent form submission
+
+      // Check if all fields are filled
+      var name = $('#name').val();
+      var dob = $('#dob').val();
+      var age = $('#Age').val();
+      var gender = $('#gender').val();
+      var phone = $('#Phonenumber').val();
+      var email = $('#email').val();
+      var address = $('#inputAddress').val();
+      var district = $('#district').val();
+      var branch = $('#branch').val();
+      var accountType = $('#account_type').val();
+
+      // Perform validation
+      if (name && dob && age && gender && phone && email && address && district && branch && accountType) {
+        // All fields are filled, submit the form
+        this.submit();
+      } else {
+        // Show an error message or take appropriate action
+        alert('Please fill in all fields.');
       }
     });
   });
